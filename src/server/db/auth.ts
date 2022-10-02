@@ -41,8 +41,8 @@ async function getSignedUpEmail(signUpData: SignUpCredentials) {
   return session 
 }
 
-async function getSignedUpGoogle() {
-  
-}
+// async function getSignedUpGoogle() {
+//   
+// }
 
 export { getSignedUpEmail }
