@@ -11,8 +11,7 @@ model Cost {
   id          String  @id @default(cuid())
   description String?
   amount      Decimal @default(0) @db.Decimal
-  user        String  @db.Uuid
+  user        String  @default(dbgenerated("'00000000-0000-0000-0000-000000000000'::uuid")) @db.Uuid
 
   @@map("cost")
 }
-
